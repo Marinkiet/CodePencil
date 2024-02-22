@@ -26,7 +26,9 @@ function Editor(props) {
         <div className={`editorContainer ${open ? '': 'collapsed'}`}>
             <div className='editorHeader'>
                 {displayName}
-                <button onClick={()=>setOpen(prevOpen=>!prevOpen)}>
+                <button 
+                className='expandButton'
+                onClick={()=>setOpen(prevOpen=>!prevOpen)}>
                     <FaExpandAlt />
                 </button>
             </div>

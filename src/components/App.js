@@ -3,7 +3,10 @@ import Editor from './Editor';
 import useLocalStorage from './hooks/useLocalStorage';
 import { FaExpandAlt } from "react-icons/fa";
 import expandImageIcon from '../assets/expands.png'
-//  <button><FaBeer /></button>
+import { IoSettingsSharp } from "react-icons/io5";
+import { FaHeart } from "react-icons/fa";
+import { IoIosCloud } from "react-icons/io";
+import { MdViewComfy } from "react-icons/md";
 function App() {
 
   const [html, setHtml] = useLocalStorage('html', '');
@@ -27,14 +30,15 @@ function App() {
     <>
       <div className="header">
         <div>
-          <h2>JabuPen</h2>
+          <h2>Code Pencil</h2>
           <p>Captain Anonymous</p>
         </div>
-        <div>
-          <button>icon</button>
-          <button>icon</button>
-          <button>Signup</button>
-          <button>Login</button>
+        <div className='rightIcons'>
+          <button className='rightIconButton'> <IoIosCloud />Save</button>
+          <button className='rightIconButton'><IoSettingsSharp />Settings</button>
+          <button className='rightIconButton'> <MdViewComfy /></button>
+          <button className='rightIconButton'>Signup</button>
+          <button className='rightIconButton'>Login</button>
         </div>
       </div>
 

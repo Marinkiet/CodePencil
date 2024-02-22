@@ -12,11 +12,31 @@ body{
   padding-left: 20px;
   padding-right: 20px;
 }
+.rightIcons{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+  
+}
+.rightIconButton{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
 .expandImage{
   height: 20px;
   width: 20px;
   object-fit: cover;
   
+}
+.expandButton{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 20px;
 }
 .topSection{
   background-color:#060606;
